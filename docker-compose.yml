@@ -4,7 +4,7 @@ services:
       build:
         context: ./client
       ports:
-        - '5173:80'
+        - '3101:80'
       depends_on:
         - backend
         - mongo
@@ -16,9 +16,9 @@ services:
     environment:
       DBUSER: usuariodev
       PASSWORD: 1234
-      PORT: 3001
+      PORT: 3100
     ports:
-      - '3000:3001'
+      - '3100:3100'
     depends_on:
       - mongo
 
@@ -27,7 +27,7 @@ services:
     image: mongo
     restart: always
     ports:
-      - '27018:27017'
+      - '27017:27017'
     environment:
       MONGO_INITDB_ROOT_USERNAME: usuariodev
       MONGO_INITDB_ROOT_PASSWORD: 1234
