@@ -1,6 +1,6 @@
 import { CreateAxiosDefaults } from 'axios';
 
-const API_ENDPOINT = 'http://localhost:3000';
+const API_ENDPOINT = 'http://20.14.218.233:3100';
 
 export const config: CreateAxiosDefaults<any> = {
 	baseURL: API_ENDPOINT,
